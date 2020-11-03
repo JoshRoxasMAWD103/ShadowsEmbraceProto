@@ -4,21 +4,22 @@ public class ShadowsEmbrace
 {
 	Scanner s = new Scanner(System.in);
 	Random r = new Random();
-	int chosenRole;
 	String user;
 	String playerWeapon;
 	String role;
+	int chosenRole;
 	int playerHP = 100;
 	int userDamage = r.nextInt(50);
-		
-	
+	String monsters[] = {"Ghoul", "Vampire",};
+	String boss;
+	int randomNumber = r.nextInt(monsters.length);
 	public static void main(String[] args) 
 	{
 		
 		ShadowsEmbrace game = new ShadowsEmbrace();
 		game.playerSetup();
 		game.onStart();
-		
+		game.monsterFight();
 	
 	}
 
@@ -73,7 +74,12 @@ public class ShadowsEmbrace
 	
 	}
 	
+	public void monsterFight()
+	{
+		System.out.println("A " + monsters[randomNumber] + " appeared!");
+	}
 	
+}
 	
 	
 	
