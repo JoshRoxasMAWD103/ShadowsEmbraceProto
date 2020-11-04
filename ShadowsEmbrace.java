@@ -8,11 +8,11 @@ public class Prototype
 		//Variables
 		
 		//Mostly Strings
-   		Scanner s = new Scanner(System.in);
-  		Random r = new Random();
-   		String user;
-   		String monsters[] = {"Ghoul", "Vampire", "Skeleton",};
-   		int monsterRandomizer = r.nextInt(monsters.length);
+   	Scanner s = new Scanner(System.in);
+  	Random r = new Random();
+   	String user;
+   	String monsters[] = {"Ghoul", "Vampire", "Skeleton",};
+   	int monsterRandomizer = r.nextInt(monsters.length);
     	String playerChoice;
     	
     	//Base Player Stats
